@@ -1,0 +1,570 @@
+body {
+	text-align: center;
+	background: #e9bb6c;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	margin: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+/***** Header Section *****/
+header {
+	background: black;
+}
+
+header div {
+	margin: 0;
+	height: 200px;
+	font-family: 'Architects Daughter', cursive;
+}
+
+.name {
+	font-size: 2.5em;
+	line-height: 200px;
+	color: #FAD996;
+}
+
+.photo {
+	height: 300px;
+	background-image: url('images/marfa_sunset2lg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.main-nav {
+	background: linear-gradient(black 50%, #9e6e48, #e9bb6c);
+}
+
+.nav {
+	font-size: 1.4em;
+	line-height: 1.7;
+	list-style-type: none;
+	text-align: left;
+	margin: 0;
+	padding-left: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+a {
+	text-decoration: none;
+	color: #FAD996;
+	transition: all .6s;
+}
+
+a:hover {
+	color: #3A7EC8;
+}
+
+
+/***** Info Section *****/
+
+h3 {
+	font-size: 1.4em;
+	margin: 0;
+	color:  #19354B; 
+	text-shadow: 0 1px 1px #3A7EC8;
+	font-family: 'Architects Daughter', cursive;
+
+}
+
+/* container is body below header */
+.container {
+	margin: 0 5%;
+}
+
+.container div {
+	text-align: left;
+	margin-bottom: 10%;
+}
+
+.container div p {
+	margin-left: 2%;
+}
+
+.container a {
+	color: #19354B;
+}
+
+#about {
+	margin-top: 10%;
+}
+
+
+
+/** Projects **/
+#projects {
+	margin: 0 -5%;
+}
+
+#projects h3 {
+	margin: 5%;
+}
+
+#thumbnail_panel {
+	border: 20px solid black; 
+	height: 700px; /* 160*4 + 3*20 for border */
+	width: 300px;
+	margin: 7% auto 0;
+	padding: 0;
+}
+
+
+#thumbnail_panel div {
+	margin: 0;
+}
+
+.thumb {
+	width: 100%;
+	height: 160px; 
+	background: black;
+	border-bottom: 20px solid black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+/* hide last 4, will show when refresh button clicked */
+.t4, .t5, .t6, .t7 {
+	display: none;
+	width: 100%;
+}
+
+
+/* start with smallest imgs, will add larger imgs for better resolution as screen grows */
+.t0 {
+	/* use bkgrnd-image here instead of just background */
+	/* background overrides previous background properties defined in .thumb */
+	background-image: url('images/aptfindersm.jpg');
+}
+
+.t1 {
+	background-image: url('images/localweathersm.jpg');
+}
+
+.t2 {
+	background-image: url('images/randomquotesm.jpg');
+}
+
+.t3 {
+	background-image: url('images/majorchordssm.jpg');
+}
+
+.t4 {
+	background-image: url('images/simonsm.jpg');
+}
+
+.t5 {
+	background-image: url('images/ornamentsm.jpg');
+}
+
+.t6 {
+	background-image: url('images/twitchsm.jpg');
+}
+
+.t7 {
+	background-image: url('images/tictactoesm.jpg');
+}
+
+#refresh {
+	text-align: center;
+	margin: 2% 0 0 1%;  /* center the icon, uses :before so there's space in front of it */
+}
+
+.fa-refresh:hover {
+	cursor: pointer;
+	color: #7A5638;
+}
+
+.fa-refresh:active {
+	/* rotate it when clicked */ 
+	transform: rotate(45deg);
+}
+
+[class^="overlay"] {
+	opacity: 0;
+	height: 160px;  /* same size as img to cover */
+	color: white;
+	transition: all .6s;
+}
+
+/* match colors to photos on overlays */
+.overlay0 {
+	background: #ff3300;
+}
+
+.overlay1 {
+	background: #1f004d;
+}
+
+.overlay2 {
+	background: #3d4620;
+}
+
+.overlay3 {
+	background: black;
+}
+
+.overlay4 {
+	background: #0000e6;
+}
+
+.overlay5 {
+	background: #cc0000;
+}
+
+.overlay6 {
+	background: #47476b;
+}
+
+.overlay7 {
+	background: #336600;
+}
+
+
+[class^="overlay"] p {
+	text-align: center;
+	line-height: 160px;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+/* show overlay when hovered over */
+[class^="overlay"]:hover {
+	opacity: .9;
+}
+
+.projlink {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+/*** Contact ***/
+
+#contact {
+	margin-top: 15%;
+	margin-bottom: 0;
+}
+
+#contact ul {
+	margin: 5% 33%;
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: space-between;
+	text-shadow: 0 1px 2px #3A7EC8;
+}
+
+
+
+footer {
+	height: 150px;
+	background: linear-gradient(#e9bb6c 25%, #9e6e48, black);
+	position: relative; /* so we can fix the home icon to the bottom */
+}
+
+.home {
+	text-align: left;
+}
+
+.home a {
+	color: #FAD996;
+	text-shadow: 0 1px 2px #9E6E48; 
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+
+/* keep header from collapsing when its 3 divs are floated */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+
+/***** Media Queries *****/
+
+@media screen and (max-width: 480px) {  /* mobile screens */
+	.name {
+		font-size: 1.5em;
+		height: 150px;
+		line-height: 150px;
+	}
+
+	.photo {
+		height: 150px;
+	}
+
+	.nav {
+		padding-top: 5%;
+		display: block;
+		text-align: center;
+		font-size: 1.1em;
+		line-height: 1.5;
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	.photo {
+		height: 350px;
+	}
+
+	.nav {
+		margin-top: 0;
+	}
+}
+
+
+/* change size of projects preview on larger screens */
+@media screen and (min-width: 700px) {
+
+	#thumbnail_panel {
+		/*height: 1060px;  250*4 + 3*20 for border */
+		height: 1060px;
+		width: 450px;
+	}
+
+	.thumb {
+		height: 250px;
+	}
+
+	[class^="overlay"] {
+		height: 250px;
+	}
+
+	[class^="overlay"] p {
+		line-height: 250px;
+		font-size: 1.4em;
+	}
+
+	.t0 {
+		/* use bkgrnd-image here instead of just background */
+		/* background overrides previous background properties defined in .thumb */
+		background-image: url('images/aptfindermd.jpg');
+	}
+
+	.t1 {
+		background-image: url('images/localweathermd.jpg');
+	}
+
+	.t2 {
+		background-image: url('images/randomquotemd.jpg');
+	}
+
+	.t3 {
+		background-image: url('images/majorchordsmd.jpg');
+	}
+
+	.t4 {
+		background-image: url('images/simonmd.jpg');
+	}
+
+	.t5 {
+		background-image: url('images/ornamentmd.jpg');
+	}
+
+	.t6 {
+		background-image: url('images/twitchmd.jpg');
+	}
+
+	.t7 {
+		background-image: url('images/tictactoemd.jpg');
+	}
+}
+
+
+/* change to larger photo on larger screens */
+@media screen and (min-width: 800px) {
+	.photo {
+		background: url('images/marfa_sunset2lg.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 420px;
+	}
+
+	.nav {
+		padding-top: 3%;
+	}
+
+	#contact ul {
+		margin: 5% 40%;
+	}
+}
+
+@media screen and (min-width: 1050px) {
+
+
+	.thumb {  /* 250 x 450 px imgs */
+		width: 400px;
+		border: 10px solid black;
+		float: left;
+	}
+
+	/* add borders to make 20px on each side of box */
+	.t0, .t4 {
+		border-top: 20px solid black;
+		border-left: 20px solid black;
+	}
+
+	.t1, .t5 {
+		border-top: 20px solid black;
+		border-right: 20px solid black;
+	}
+
+	.t2, .t6 {
+		border-left: 20px solid black;
+		border-bottom: 20px solid black;
+	}
+
+	.t3, .t7 {
+		border-right: 20px solid black;
+		border-bottom: 20px solid black;
+	}
+
+
+	#thumbnail_panel {
+		border: none;
+		width: 860px;
+		height: 560px;  /* 250px * 2, + 60 border */
+	}
+
+
+	[class^="overlay"] {
+		height: 250px;
+	}
+
+	[class^="overlay"] p {
+		line-height: 250px;
+		font-size: 1.4em;
+	}
+
+	.projlink {
+		margin-top: 3%;
+		font-size: 1.2em;
+	}
+}
+
+
+@media screen and (min-width: 1120px) {  /* laptop/desktop */
+	
+	header {
+		padding-top: 5%;
+	}
+
+	.name, .photo, .main-nav {
+		float: left;
+		height: 300px;
+	}
+
+	.name {
+		width: 27.5%;
+		line-height: 1;
+		box-sizing: border-box;
+		padding: 9% 10% 0 8%;
+	}
+
+	.photo {
+		margin-top: 2%;
+		width: 45%;
+		background-position: center;  
+	}
+
+	.main-nav {
+		width: 27.5%;
+		background: black;
+		box-sizing: border-box;
+		padding: 6% 7% 5% 4%;
+	}
+
+	.nav {
+		display: block;  /* change ul back from flexbox */
+		text-align: center;
+		font-size: 1.6em;
+	}
+
+	.container {
+		margin: 23% 10% 0;
+		font-size: 1.1em;
+		line-height: 1.7;
+	}
+
+	body {
+		background: linear-gradient(black 15%, #9e6e48 17%, #e9bb6c 19%);
+	}
+}
+
+@media screen and (min-width: 1200px) { /* adjust positioning on larger screens */
+	.name {
+		padding: 8% 7% 0 8%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+
+	.name {
+		padding: 7% 7% 0 9%;
+	}
+
+	.thumb {  /* 320 x 600 px imgs */
+		width: 500px;
+		height: 300px;
+	}
+
+	#thumbnail_panel {
+		border: none;
+		width: 1060px;
+		height: 660px;  /* 320px * 2, + 60 border */
+	}
+
+
+	[class^="overlay"] {
+		height: 300px;
+	}
+
+	[class^="overlay"] p {
+		line-height: 300px;
+		font-size: 1.4em;
+	}
+
+
+	.t0 {
+		background-image: url('images/aptfinderlg.jpg');
+	}
+
+	.t1 {
+		background-image: url('images/localweatherlg.jpg');
+	}
+
+	.t2 {
+		background-image: url('images/randomquotelg.jpg');
+	}
+
+	.t3 {
+		background-image: url('images/majorchordslg.jpg');
+	}
+
+	.t4 {
+		background-image: url('images/simonlg.jpg');
+	}
+
+	.t5 {
+		background-image: url('images/ornamentlg.jpg');
+	}
+
+	.t6 {
+		background-image: url('images/twitchlg.jpg');
+	}
+
+	.t7 {
+		background-image: url('images/tictactoelg.jpg');
+	}
+}

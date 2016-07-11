@@ -1,7 +1,133 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p> I'm hosted with Github Pages.</p>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>Portfolio Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans%7cArchitects+Daughter" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/3955e252e6.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="portfolio.js" async></script>
+</head>
+<body> 
+
+	<header class="clearfix" id="top">
+		<div class="name">Jessica Lowery</div>
+		<div class="photo"></div>
+		<div class="main-nav">
+			<ul class="nav">
+				<li><a href="#about">About</a></li>
+				<li><a href="#edu">Education/Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<!-- container is body below header, all info sections -->
+	<div class="container">
+
+		<div id="about">
+			<h3>About</h3>
+			<p>Hi! I'm Jessica. I currently live in Austin, TX. <br>Coding makes me happy! I enjoy web development because I like learning new things, & there's always something new to learn in programming. My other interests are music, fitness, baking & hooping! I hope to incorporate my individual perspective into designing & coding websites.
+			</p>
+		</div>
+
+
+		<div id="edu">
+			<h3>Education/Skills</h3>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Javascript/JQuery</li>
+				<li>I hope to add more to this list soon!</li>
+			</ul>
+			<ul>
+				<li>Associate of Science Degree in Computer Science from Blinn College</li>
+				<li>Licensed Real Estate Agent</li>
+				<li><a href="https://www.freecodecamp.com/jlowery319/front-end-certification" target="_blank">Front End Web Development Certification</a> from 
+					<a href="https://www.freecodecamp.com" target="_blank">Free Code Camp</a>
+				</li>
+				<li>Front End Web Development Courses on 
+					<a href="https://teamtreehouse.com" target="_blank">Treehouse</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="projects">
+			<h3>Projects</h3>
+			<div id="thumbnail_panel" class="clearfix">
+				<a href="http://codepen.io/eviljessica/full/wADqo/" target="_blank">
+					<div class="thumb t0">
+						<div class="overlay0"><p>Apartment Finding Circle Demo</p></div>
+					</div>
+				</a>
+
+				<a href="http://codepen.io/eviljessica/full/YqBoPo/" target="_blank">
+				<div class="thumb t1">
+					<div class="overlay1"><p>Show the Local Weather</p></div>
+				</div>
+				</a>
+
+				<a href="http://codepen.io/eviljessica/full/grqmOX/" target="_blank">
+					<div class="thumb t2">
+						<div class="overlay2"><p>Random Quote Machine</p></div>
+					</div>
+				</a>
+
+				<a href="http://codepen.io/eviljessica/full/QwypKZ/" target="_blank">
+					<div class="thumb t3">
+						<div class="overlay3"><p>Learn Major Chords</p></div>
+					</div>
+				</a>
+			
+				
+				<a href="http://codepen.io/eviljessica/full/JKdaMb/" target="_blank">
+					<div class="thumb t4">
+						<div class="overlay4"><p>Simon Game</p></div>
+					</div>
+				</a>
+				<a href="http://codepen.io/eviljessica/full/Eaxdqx/" target="_blank">
+					<div class="thumb t5">
+						<div class="overlay5"><p>Party Invitation</p></div>
+					</div>
+				</a>
+				<a href="http://codepen.io/eviljessica/full/XdQxpX/" target="_blank">
+					<div class="thumb t6">
+						<div class="overlay6"><p>Twitch.tv API</p></div>
+					</div>
+				</a>
+				<a href="http://codepen.io/eviljessica/full/oLNVvg/" target="_blank">
+					<div class="thumb t7">
+						<div class="overlay7"><p>Tic-Tac-Toe</p></div>
+					</div>
+				</a>
+			</div>
+
+			<div id="refresh"><i class="fa fa-refresh fa-2x"></i></div><p class="projlink">See More of my Projects on <a href="http://codepen.io/eviljessica/" target="_blank">Codepen</a></p>	
+
+		</div>
+
+
+		<div id="contact">
+			<!-- <h3>Contact</h3> -->
+			<ul>
+				<li><a href="https://www.linkedin.com/in/jessica-lowery-7846536a" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+        		<li><a href="https://github.com/jlowery319" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+        		<li><a href="mailto:jessica.e.lowery@gmail.com" target="_top"><i class="fa fa-at fa-2x"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<div class="home"><a href="#top"><i class="fa fa-home fa-3x"></i></a></div>
+	</footer>
+
 </body>
 </html>
