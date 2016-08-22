@@ -98,7 +98,8 @@ h3 {
 	margin: 0 -5%;
 }
 
-#projects h3 {
+#projects h3,
+#projects p {
 	margin: 5%;
 }
 
