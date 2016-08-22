@@ -98,9 +98,12 @@ h3 {
 	margin: 0 -5%;
 }
 
-#projects h3,
-#projects p {
+#projects h3 {
 	margin: 5%;
+}
+
+#projects p {
+	margin-left: 5%;
 }
 
 #thumbnail_panel {
