@@ -107,7 +107,7 @@ h3 {
 	/*border: 20px solid black; */
 	border: 10px solid black;
 	border-bottom: 0;
-	/*height: 700px;  160*4 + 3*20 for border */
+	/*height: 700px;  160*4 + 3*10 for border */
 	height: 680px;
 	width: 300px;
 	margin: 7% auto 0;
@@ -141,7 +141,8 @@ h3 {
 .t0 {
 	/* use bkgrnd-image here instead of just background */
 	/* background overrides previous background properties defined in .thumb */
-	background-image: url('images/aptfindersm.jpg');
+	/*background-image: url('images/aptfindersm.jpg');*/
+	background-image: url('images/panda0.jpg');
 }
 
 .t1 {
@@ -362,7 +363,8 @@ footer {
 	.t0 {
 		/* use bkgrnd-image here instead of just background */
 		/* background overrides previous background properties defined in .thumb */
-		background-image: url('images/aptfindermd.jpg');
+		/*background-image: url('images/aptfindermd.jpg');*/
+
 	}
 
 	.t1 {
@@ -520,6 +522,7 @@ footer {
 	body {
 		background: linear-gradient(black 15%, #9e6e48 17%, #e9bb6c 19%);
 	}
+
 }
 
 @media screen and (min-width: 1200px) { /* adjust positioning on larger screens */
@@ -557,7 +560,7 @@ footer {
 
 
 	.t0 {
-		background-image: url('images/aptfinderlg.jpg');
+		/*background-image: url('images/aptfinderlg.jpg');*/
 	}
 
 	.t1 {
