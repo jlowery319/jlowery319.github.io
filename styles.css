@@ -146,19 +146,23 @@ h3 {
 }
 
 .t1 {
-	background-image: url('images/localweathersm.jpg');
+	/*background-image: url('images/localweathersm.jpg');*/
+	background-image: url('images/aptshere0.jpg');
 }
 
 .t2 {
-	background-image: url('images/randomquotesm.jpg');
+	background-image: url('images/lavender0.jpg');
+	/*background-image: url('images/randomquotesm.jpg');*/
 }
 
 .t3 {
-	background-image: url('images/majorchordssm.jpg');
+	/*background-image: url('images/majorchordssm.jpg');*/
+	background-image: url('images/localweathersm.jpg');
 }
 
 .t4 {
-	background-image: url('images/simonsm.jpg');
+	/*background-image: url('images/simonsm.jpg');*/
+	background-image: url('images/aptfindersm.jpg');
 }
 
 .t5 {
@@ -197,23 +201,27 @@ h3 {
 
 /* match colors to photos on overlays */
 .overlay0 {
-	background: #ff3300;
+	/*background: #ff3300;  red for apt circle*/
+	background: #1a1c1a;
 }
 
 .overlay1 {
-	background: #1f004d;
+	/*background: #1f004d;*/
+	background: #1c540a;
 }
 
 .overlay2 {
-	background: #3d4620;
+	/*background: #3d4620;*/
+	background: #600080;
 }
 
 .overlay3 {
-	background: black;
+	background: #1f004d;
 }
 
 .overlay4 {
-	background: #0000e6;
+	/*background: #0000e6;*/
+	background: #ff3300;
 }
 
 .overlay5 {
@@ -368,19 +376,20 @@ footer {
 	}
 
 	.t1 {
-		background-image: url('images/localweathermd.jpg');
+		/*background-image: url('images/localweathermd.jpg');*/
 	}
 
 	.t2 {
-		background-image: url('images/randomquotemd.jpg');
+		/*background-image: url('images/randomquotemd.jpg');*/
 	}
 
 	.t3 {
-		background-image: url('images/majorchordsmd.jpg');
+		/*background-image: url('images/majorchordsmd.jpg');*/
+		background-image: url('images/localweathermd.jpg');
 	}
 
 	.t4 {
-		background-image: url('images/simonmd.jpg');
+		background-image: url('images/aptfindermd.jpg');
 	}
 
 	.t5 {
@@ -564,19 +573,19 @@ footer {
 	}
 
 	.t1 {
-		background-image: url('images/localweatherlg.jpg');
+		/*background-image: url('images/localweatherlg.jpg');*/
 	}
 
 	.t2 {
-		background-image: url('images/randomquotelg.jpg');
+		/*background-image: url('images/randomquotelg.jpg');*/
 	}
 
 	.t3 {
-		background-image: url('images/majorchordslg.jpg');
+		/*background-image: url('images/majorchordslg.jpg');*/
 	}
 
 	.t4 {
-		background-image: url('images/simonlg.jpg');
+		background-image: url('images/aptfinderlg.jpg');
 	}
 
 	.t5 {
