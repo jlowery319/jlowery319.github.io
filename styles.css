@@ -514,6 +514,7 @@ footer {
 		background: black;
 		box-sizing: border-box;
 		padding: 6% 7% 5% 4%;
+
 	}
 
 	.nav {
@@ -523,14 +524,18 @@ footer {
 	}
 
 	.container {
-		margin: 23% 10% 0;
+		margin: 24% 10% 0;
+		/*margin: 18% 10% 0;*/
 		font-size: 1.1em;
 		line-height: 1.7;
 	}
 
 	body {
-		background: linear-gradient(black 15%, #9e6e48 17%, #e9bb6c 19%);
+		/*background: linear-gradient(black 15%, #9e6e48 17%, #e9bb6c 19%);*/
+		background: linear-gradient(black 20%, #9e6e48 23%, #e9bb6c 25%);
 	}
+
+
 
 }
 
