@@ -146,23 +146,19 @@ h3 {
 }
 
 .t1 {
-	/*background-image: url('images/localweathersm.jpg');*/
-	background-image: url('images/aptshere0.jpg');
+	background-image: url('images/broker3.jpg');
 }
 
 .t2 {
-	background-image: url('images/lavender0.jpg');
-	/*background-image: url('images/randomquotesm.jpg');*/
+	background-image: url('images/aptshere0.jpg');
 }
 
 .t3 {
-	/*background-image: url('images/majorchordssm.jpg');*/
-	background-image: url('images/localweathersm.jpg');
+	background-image: url('images/lavender0.jpg');
 }
 
 .t4 {
-	/*background-image: url('images/simonsm.jpg');*/
-	background-image: url('images/aptfindersm.jpg');
+	background-image: url('images/localweathersm.jpg');
 }
 
 .t5 {
@@ -207,21 +203,19 @@ h3 {
 
 .overlay1 {
 	/*background: #1f004d;*/
-	background: #1c540a;
+	background: #11397a;
 }
 
 .overlay2 {
-	/*background: #3d4620;*/
-	background: #600080;
+	background: #1c540a;
 }
 
 .overlay3 {
-	background: #1f004d;
+	background: #600080;
 }
 
 .overlay4 {
-	/*background: #0000e6;*/
-	background: #ff3300;
+	background: #1f004d;
 }
 
 .overlay5 {
@@ -385,11 +379,12 @@ footer {
 
 	.t3 {
 		/*background-image: url('images/majorchordsmd.jpg');*/
-		background-image: url('images/localweathermd.jpg');
+		/*background-image: url('images/localweathermd.jpg');*/
 	}
 
 	.t4 {
-		background-image: url('images/aptfindermd.jpg');
+		background-image: url('images/localweathermd.jpg');
+		/*background-image: url('images/aptfindermd.jpg');*/
 	}
 
 	.t5 {
